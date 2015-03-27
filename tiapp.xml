@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">j6zLXoo0HOmzXWRUM9g81jpp8sNPksQl</property>
+    <property name="acs-oauth-key-production" type="string">DxzWk3OQnVQFzD7T7vdRVx1Hgqekc6Yy</property>
+    <property name="acs-api-key-production" type="string">O5Ey43jbYKvulqfbIYZCx8c4GLSlM1zG</property>
+    <property name="acs-oauth-secret-development" type="string">r6awfD4wMvUlmpYMRiasn2q01LBptHAw</property>
+    <property name="acs-oauth-key-development" type="string">KAd9BD0PkZ28hkRm4OmK0qe5MVWhXs6W</property>
+    <property name="acs-api-key-development" type="string">Sp2CyToFWD0djAYx9d8M3Kx7m4JzzQwV</property>
+    <id>ci.acs.adapter.starter</id>
+    <name>acs_alloy_adapter_test</name>
+    <version>2.0</version>
+    <publisher>aaronksaunders</publisher>
+    <url>http://www.clearlyinnovative.com</url>
+    <description>not specified</description>
+    <copyright>2015 by aaronksaunders</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>f8a6fcfc-ff04-4596-99dd-56de9eff4ea5</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UIBackgroundModes</key>
+                <array>
+                    <string>location</string>
+                </array>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>ACS Starter Template App</string>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string>ACS Starter Template App</string>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <!-- updated android manifest information for new UI -->
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <tool-api-level>16</tool-api-level>
+        <manifest>
+            <!-- uses-sdk android:minSdkVersion="11" android:targetSdkVersion="14" -->
+            <!-- Camera Access -->
+            <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-feature android:name="android.hardware.camera"/>
+            <uses-feature android:name="android.hardware.camera.autofocus"/>
+            <!-- Allows the API to download data from Google Map servers -->
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <!-- Allows the API to cache data -->
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <!-- Use GPS for device location -->
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+            <!-- Use Wi-Fi or mobile connection for device location -->
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            <!-- Allows the API to access Google web-based services -->
+            <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+            <!-- Specify OpenGL ES 2.0 as a requirement -->
+            <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+            <application android:hardwareAccelerated="true">
+            </application>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>3.5.0.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+</ti:app>
