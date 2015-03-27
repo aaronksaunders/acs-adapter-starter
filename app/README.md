@@ -29,3 +29,5 @@ widgets				pre-built, reusable components for your Ally apps.
 
 Also, in the root is the alloy.jmk file and config.json.  Alloy.jmk acts like a makefile and can be used to hook into the Alloy compiler to customize the build process. The config.json file is where you can declare runtime contstants, and widget dependencies.
 
+
+ "/Users/aaronksaunders/local/bin/node" "/usr/local/bin/ti" "build" "--sdk" "3.4.1.GA" "--config-file" "/Users/aaronksaunders/.titanium/config.json" "--platform" "iphone" "--project-dir" "/Users/aaronksaunders/Documents/workspace/howardU/acs_adapter_starter" "--log-level" "trace" "--developer-name" "Aaron Saunders (95NJWPNCY3)" "--distribution-name" "Clearly Innovative Inc (X49GQ889BB)" "--target" "simulator"
