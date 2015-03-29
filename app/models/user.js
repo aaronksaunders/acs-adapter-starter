@@ -133,6 +133,8 @@ exports.definition = {
 			retrieveStoredSession : retrieveStoredSession,
 			hasStoredSession : hasStoredSession,
 			authenticated : authenticated,
+			getCurrentLocation : require('utilities').getCurrentLocation,
+			reverseGeocoder : require('utilities').reverseGeocoder,
 		});
 		// end extend
 

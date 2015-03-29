@@ -31,6 +31,15 @@ function userLoggedIn(_user) {
 	
 	// set button title with name to show we are logged in
 	$.logoutBtn.title = "Logout: " + _user.get("username");
+
+
+	// added support for getting location from the user
+	// object since it seems like a helpful feature
+	_user.getCurrentLocation().then(function(_results) {
+		Ti.API.debug('_results ' + JSON.stringify(_results, null, 2));
+	}, function(_error) {
+		Ti.API.error('_error ' + JSON.stringify(_error));
+	});
 	
 }
 /**
@@ -45,6 +54,7 @@ function userNotLoggedIn() {
 			
 			// close the old window
 			ctrl.getView().close();
+			ctrl = nil;
 		}
 	});
 
@@ -68,3 +78,9 @@ function doLogout() {
 		});
 	}
 }
+
+$.mainWindow.addEventListener('androidback',function(e){
+    $.mainWindow.close();
+
+	$.mainWindow.finish();
+});

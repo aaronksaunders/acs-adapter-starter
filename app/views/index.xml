@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id='mainWindow' class='container'>
+	<Window id='mainWindow' class='container' exitOnClose='true' title='Sample App'>
 		<Label>HELLO WORLD</Label>
 		<Button id='logoutBtn' onClick="doLogout" top="50dp">Logout</Button>
 	</Window>
