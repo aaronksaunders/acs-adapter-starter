@@ -82,5 +82,6 @@ function doLogout() {
 $.mainWindow.addEventListener('androidback',function(e){
     $.mainWindow.close();
 
-	$.mainWindow.finish();
+    // get activity and cleanup
+	$.mainWindow.activity.finish();
 });
