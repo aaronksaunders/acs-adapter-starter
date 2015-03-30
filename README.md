@@ -10,4 +10,6 @@ _Concepts here are meant to be a introductory guide to concepts covered in my bo
 ===
 The purpose of this repo is to provide an application template as a starter to build native, cross-platform, cloud enabled application on the Appcelerator Platform.
 
-Has a User Object with extended methods for logging in and getting account information. We have also extended the user to provide gelocation functionality
+###Features
+* Has a User Object with extended methods for logging in and getting account information. 
+* We have also extended the user to provide gelocation functionality
