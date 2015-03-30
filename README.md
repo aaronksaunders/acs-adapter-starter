@@ -9,3 +9,5 @@ _Concepts here are meant to be a introductory guide to concepts covered in my bo
 #####[Available On Amazon.com](http://www.amazon.com/Building-Cross-Platform-Titanium-Appcelerator-Services/dp/1118673255)
 ===
 The purpose of this repo is to provide an application template as a starter to build native, cross-platform, cloud enabled application on the Appcelerator Platform.
+
+Has a User Object with extended methods for logging in and getting account information. We have also extended the user to provide gelocation functionality
