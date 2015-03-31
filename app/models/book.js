@@ -1,3 +1,6 @@
+//
+// THIS IS FOR GENERIC OBJECTS NOT DEFINED BY APPCELERATOR
+//
 exports.definition = {
 
 	config : {
