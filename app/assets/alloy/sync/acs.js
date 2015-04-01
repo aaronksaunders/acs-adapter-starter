@@ -74,9 +74,17 @@ function Sync(method, model, opts) {
 	case "update":
 		Ti.API.debug(' updating object with id ' + model.id);
 
-		var params = model.toJSON(),
-		    id_name = object_name.replace(/s+$/, "") + "_id";
-		params[id_name] = model.id = opts.id || model.id;
+		var params = {};
+		// if custom object then set the classname in params variable
+		if (model.config.settings.object_method === "Objects") {
+			params['fields'] = model.toJSON();
+			params['classname'] = object_name;
+			params['id'] = model.id;
+		} else {
+			params = model.toJSON();
+			var id_name = object_name.replace(/s+$/, "") + "_id";
+			params[id_name] = model.id = opts.id || model.id;
+		}
 
 		if (model.config.settings.object_method === "Reviews") {
 			var reviewdObject = model.get('reviewed_object');
@@ -165,7 +173,7 @@ function getObjects(_model, _opts, _deferred) {
 			}
 			_model.meta = e.meta;
 			_opts.success && _opts.success(retArray), _model.trigger("fetch");
-			return _deferred.resolve( _model);
+			return _deferred.resolve(_model);
 		} else {
 			Ti.API.error(e);
 			_opts.error && _opts.error(e.error && e.message || e);
@@ -190,8 +198,8 @@ function searchObjects(_model, _opts, _deferred) {
 			}
 			_model.meta = e.meta;
 			_opts.success && _opts.success(retArray), _model.trigger("fetch");
-			
-			return _deferred.resolve( _model);
+
+			return _deferred.resolve(_model);
 
 		} else {
 			Ti.API.error(e);
