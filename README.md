@@ -13,3 +13,12 @@ The purpose of this repo is to provide an application template as a starter to b
 ###Features
 * Has a User Object with extended methods for logging in and getting account information. 
 * We have also extended the user to provide gelocation functionality
+
+###How To Use
+1. Create New Project and make sure you cloud-enable the application
+1. Download the starter template from the github repo [https://github.com/aaronksaunders/acs-adapter-starter/archive/master.zip](https://github.com/aaronksaunders/acs-adapter-starter/archive/master.zip)
+1. Copy the contents of the app directory from the starter-template to replace  the files in the new project you just created
+1. Login to the appcelerator cloud service console - my.appcelerator.com
+1. create a new test user for the application
+
+After following those steps, you should be able to login the user you added in the console or create a new user using the application interface
