@@ -181,6 +181,7 @@ exports.definition = {
 			authenticated : authenticated,
 			getCurrentLocation : require('utilities').getCurrentLocation,
 			reverseGeocoder : require('utilities').reverseGeocoder,
+			createAccount : createAccount,
 		});
 		// end extend
 
