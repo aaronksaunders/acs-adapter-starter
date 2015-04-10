@@ -23,4 +23,4 @@ The purpose of this repo is to provide an application template as a starter to b
 
 After following those steps, you should be able to login the user you added in the console or create a new user using the application interface
 
-[More documentation on the sync adapter is available here](https://github.com/aaronksaunders/Appcelerator-Cloud-Services-Sync-Adapter/blob/master/README.md)
+###[More documentation on the sync adapter is available here](https://github.com/aaronksaunders/Appcelerator-Cloud-Services-Sync-Adapter/blob/master/README.md)
