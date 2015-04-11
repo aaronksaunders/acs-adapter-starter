@@ -1,9 +1,15 @@
 ".container": {
-	backgroundColor:"white",
+	backgroundColor: "white",
 	exitOnClose: true
 },
 "Label": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	color: "#000"
-} 
+}
+"Button": {
+	borderColor: 'grey',
+	borderWidth: '.5em',
+	width: '60%',
+	color: 'black',
+}

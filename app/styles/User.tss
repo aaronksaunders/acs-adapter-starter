@@ -1,12 +1,13 @@
 // General Styles
 ".container": {
-	backgroundColor:"white"
+	backgroundColor: "white"
 },
 '.tfWrapper': {
 	top: '6dp',
 	width: '260dp',
 	height: '40dp',
-	border: 1,
+	border: '.5em',
+	borderWidth: '.5em',
 	borderColor: 'gray'
 },
 '.centerHelper': {
@@ -33,23 +34,27 @@ TextField: {
 },
 // Default Button Style
 "Button": {
+	borderColor: 'grey',
+	borderWidth: '.5em',
 	top: '6dp',
 	width: '120dp',
 	height: '36dp',
+	color: 'black',
 	font:{
 		fontSize: '13dp'
 	}
 },
+
 ScrollView: {
-   contentHeight: Ti.UI.SIZE,
-   contentWidth: Ti.UI.SIZE
+	contentHeight: Ti.UI.SIZE,
+	contentWidth: Ti.UI.SIZE
 },
-'.visible' : {
-	opacity: 1,	
+'.visible': {
+	opacity: 1
 }
-'.not-visible' : {
-	opacity: 0,	
-	top : '500dp'
+'.not-visible': {
+	opacity: 0,
+	top: '500dp'
 }
 '.inputView': {
 	width: Ti.UI.SIZE,
@@ -59,8 +64,8 @@ ScrollView: {
 	backgroundColor: 'transparent'
 },
 '#accountText':{
-	width : '80%',
-	textAlign : 'center',
+	width: '80%',
+	textAlign: 'center',
 	text: "ACS Starter Application Template",
 	font:{
 		fontSize: '24dp',
@@ -104,8 +109,8 @@ ScrollView: {
 	left: '0dp'
 },
 '#doCreateAccountBtn': {
-	left: '0dp'
+	left: '10dp'
 },
 '#doShowCreateAccountBtn': {
-	left: '0dp'
+	left: '20dp'
 }
